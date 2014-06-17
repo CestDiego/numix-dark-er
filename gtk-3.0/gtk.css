@@ -5,7 +5,8 @@
 @define-color fg_color #dcdcdc;
 @define-color selected_bg_color #d64937;
 @define-color selected_fg_color #f9f9f9;
-@define-color tooltip_bg_color #2d2d2d;
+/* @define-color tooltip_bg_color #2d2d2d; */
+@define-color tooltip_bg_color #0f0f0f;
 @define-color tooltip_fg_color #f9f9f9;
 
 /* dark color scheme */
