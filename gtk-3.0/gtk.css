@@ -6,12 +6,12 @@
 @define-color selected_bg_color #d64937;
 @define-color selected_fg_color #f9f9f9;
 /* @define-color tooltip_bg_color #2d2d2d; */
-@define-color tooltip_bg_color #0f0f0f;
+@define-color tooltip_bg_color #1f1f1f;
 @define-color tooltip_fg_color #f9f9f9;
 
 /* dark color scheme */
-@define-color dark_bg_color #0a0a0a;
-@define-color dark_fg_color #dcdcdc;
+@define-color dark_bg_color #1f1f1f;
+@define-color dark_fg_color #d0d0d0;
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
@@ -65,8 +65,10 @@
 
 /* window manager colors */
 @define-color wm_bg @titlebar_bg_color;
-@define-color wm_border_focused mix(shade(@titlebar_bg_color, 0.7), @titlebar_fg_color, 0.21);
-@define-color wm_border_unfocused mix(shade(@titlebar_bg_color, 0.7), @titlebar_fg_color, 0.21);
+/* @define-color wm_border_focused mix(shade(@titlebar_bg_color, 0.7), @titlebar_fg_color, 0.21); */
+/* @define-color wm_border_unfocused mix(shade(@titlebar_bg_color, 0.7), @titlebar_fg_color, 0.21); */
+@define-color wm_border_focused @titlebar_bg_color
+@define-color wm_border_unfocused @titlebar_bg_color
 @define-color wm_title_focused mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
 @define-color wm_title_unfocused mix(@titlebar_fg_color, @titlebar_bg_color, 0.4);
 @define-color wm_icons_focused mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
